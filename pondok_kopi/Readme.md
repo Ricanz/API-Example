@@ -8,7 +8,7 @@ Below is the list of available APIs. Click on each menu to view the detailed doc
 2. [Get NIK](./getNik.md)  
    Documentation for the API to retrieve information about patient data by NIK or RM.
 
-3. [Get Info Bad](./getInfoBed.md)  
+3. [Get Info Bed](./getInfoBed.md)  
    Documentation for fetching Info Bed data.
 
 4. [Get Kode Dokter](./getKodeDokter.md)  
