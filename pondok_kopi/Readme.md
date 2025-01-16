@@ -32,7 +32,7 @@ Documentation for fetching Perusahaan data.
 10. [Get Penjamin - List Nama Penjamin](./getPenjamin.md)  
 Documentation for fetching Penjamin data.
 
-11. [Post Perjanjian](./postPerjanjian.md)  
+11. [Post Perjanjian - Reservation OutPatient](./postPerjanjian.md)  
 Documentation for the API to post reservation.
 
 12. [Post Batal Perjanjian](./postBatalPerjanjian.md)  

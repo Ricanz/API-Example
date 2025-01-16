@@ -17,11 +17,11 @@ This document explains how to make a post perjanjian request to the specified AP
 
 ## Headers
 
-Include the `Authorization` header with Basic authentication credentials.
+Include the `Authorization` header with Bearer authentication credentials.
 
 ```javascript
 const myHeaders = new Headers();
-myHeaders.append("Authorization", "Basic XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+myHeaders.append("Authorization", "Bearer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
 ```
 
 ---
@@ -38,7 +38,10 @@ Send the following form data in the request body:
     "dsid": "6759",
     "tanggal_perjanjian": "15-01-2025",
     "jam_perjanjian": "07:00",
-    "kode_perusahaan": "-",
+    "jenis_jaminan": "admedika", // umum, admedika, non admedika
+    "kode_asuransi": "123123",
+    "kode_perusahaan": "345345",
+    "nomor_polis": "43534534",
     "admedika": "y"
   }
 }
@@ -47,14 +50,17 @@ Send the following form data in the request body:
 ```javascript
 const raw = JSON.stringify({
     "data": {
-    "kodeprovider": "214",
-    "nomor_ktp": "3674014967548100",
-    "dsid": "6759",
-    "tanggal_perjanjian": "15-01-2025",
-    "jam_perjanjian": "07:00",
-    "kode_perusahaan": "-",
-    "admedika": "y"
-  }
+      "kodeprovider": "214",
+      "nomor_ktp": "3674014967548100",
+      "dsid": "6759",
+      "tanggal_perjanjian": "15-01-2025",
+      "jam_perjanjian": "07:00",
+      "jenis_jaminan": "admedika", // umum, admedika, non admedika
+      "kode_asuransi": "123123",
+      "kode_perusahaan": "345345",
+      "nomor_polis": "43534534",
+      "admedika": "y"
+    }
 });
 ```
 
@@ -112,14 +118,14 @@ The API will return the response in JSON format. Make sure to handle the result 
 ```json
 {
     "code": 400,
-    "status": "Not Found",
+    "status": "Bad Request",
     "message": "Sudah ada jadwal"
 }
 ```
 ```json
 {
     "code": 400,
-    "status": "Not Found",
+    "status": "Bad Request",
     "message": "Jadwal ini hanya ada di hari Rabu"
 }
 ```
