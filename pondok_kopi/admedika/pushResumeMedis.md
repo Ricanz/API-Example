@@ -1,14 +1,14 @@
 
-# Konfirmasi Reservasi API Documentation
+# Push Notification Resume Medis API Documentation
 
-This document explains how to make a post registrasi request to the specified API endpoint using JavaScript's `fetch` API. 
+This document explains how to make a post cancel reservation request to the specified API endpoint using JavaScript's `fetch` API. 
  This API currently use for `Mobile` needed.
 `Make sure the endpoint, request and response is exact same!`
 
 ## Endpoint
 
 **URL**:  
-`https://admedika-api.example.com/api/v1/external/placeAttendance`
+`https://admedika-api.example.com/api/v1/external/reservation/pushRekamMedis`
 
 **Method**:  
 `POST`
@@ -33,7 +33,8 @@ Send the following form data in the request body:
 ```json
 {
   "data": {
-    "kode_booking": "24U10LZEN1"
+    "kode_booking": "24U10LZEN1",
+    "description": "Resume medis Anda telah di buat"
   }
 }
 ```
@@ -41,7 +42,8 @@ Send the following form data in the request body:
 ```javascript
 const raw = JSON.stringify({
     "data": {
-        "kode_booking": "24U10LZEN1"
+        "kode_booking": "24U10LZEN1",
+        "description": "Resume medis Anda telah di buat"
     }
 });
 ```
@@ -68,7 +70,7 @@ const requestOptions = {
 Use the `fetch` API to send the request:
 
 ```javascript
-fetch("https://admedika-api.example.com/api/v1/external/placeAttendance", requestOptions)
+fetch("https://admedika-api.example.com/api/v1/external/reservation/pushRekamMedis", requestOptions)
   .then((response) => response.text())
   .then((result) => console.log(result))
   .catch((error) => console.error(error));
@@ -83,33 +85,13 @@ The API will return the response in JSON format. Make sure to handle the result 
 ### Example Response (Success)
 ```json
 {
-    "code": 1783,
+    "code": 1782,
     "status": "SUCCESS",
-    "message": "Berhasil melakukan kehadiran pada reservasi.",
-    "data": {
-        "reservation_no": "24U10LZEN1",
-        "visit_date": "2024-10-01",
-        "visit_time": "08:00",
-        "reservation_status": "ATTENDANCE"
-    }
+    "message": "Berhasil melakukan push notif ke mobile."
 }
 ```
 
 ### Example Response (Error)
-```json
-{
-    "code": 1787,
-    "status": "ERROR",
-    "message": "Gagal membuat LOA. Pastikan tidak ada claim tersedia!",
-    "data": {
-        "reservation_no": "24L10RXPC2",
-        "visit_date": "2024-10-04",
-        "visit_time": "12:00",
-        "reservation_status": "INPROGRESS",
-        "reservation_status_detail": "NOTELIGIBLE"
-    }
-}
-```
 ```json
 {
     "code": 404,

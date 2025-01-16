@@ -93,6 +93,7 @@ The API will return the response in JSON format. Make sure to handle the result 
         "pemeriksaan": {
             "30945": {
                 "tanggal_order": "02 December 2024 11:28",
+                "nama_tindakan": "Uji Darah Lengkap",
                 "pemeriksaan_lab": [
                     {
                         "nama_pemeriksaan": "Analisa Cairan Lambung"

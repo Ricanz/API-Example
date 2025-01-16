@@ -111,5 +111,4 @@ The API will return the response in JSON format. Make sure to handle the result 
 ## Notes
 - Ensure you have the correct `Authorization` credentials.
 - Replace the body request with the appropriate values for your use case.
-- Replace the `kode_provider` with the appropriate values for your use case.
 - Handle sensitive information securely, avoiding hardcoding credentials in production environments.
