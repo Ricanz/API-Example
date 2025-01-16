@@ -59,11 +59,14 @@ Documentation for fetching Patient's PDF data.
 19. [Get Info Jadwal Dokter](./getInfoJadwalDokter.md)
 Documentation for fetching doctor's schedule.
 
-20. [Push No RM](./pushNoRm.md)  
+20. [Push No RM](./pushNoRm.md)
 Documentation for push Patient's RM.
 
-21. [Validasi Penjamin Non AdMedika ](./validasiNonAdmedika.md)  
-Documentation for push Patient's RM.
+21. [Validasi Penjamin Non AdMedika ](./validasiNonAdmedika.md)
+Documentation for checking patient's insurer.
+
+22. [Validasi Penjamin AdMedika ](./validasiAdmedika.md)
+Documentation for checking patient's insurer.
 
 Documentation for the API to retrieve information about doctor schedule.
 
