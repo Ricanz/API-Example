@@ -94,6 +94,7 @@ The API will return the response in JSON format. Make sure to handle the result 
                 "tgl_konsul": "31-03-2018",
                 "nama_poli": "KLINIK SPESIALIS PENYAKIT DALAM",
                 "resep": "Y",
+                "resep": "Sudah pulang",
                 "penjamin": "UMUM",
                 "resume_medis": []
             }
@@ -104,6 +105,7 @@ The API will return the response in JSON format. Make sure to handle the result 
                 "tgl_konsul": "29-03-2018",
                 "nama_poli": "MEDICAL CHECK UP",
                 "resep": "N",
+                "resep": "Sudah pulang",
                 "penjamin": "UMUM",
                 "resume_medis": {
                     "tindakan": [
