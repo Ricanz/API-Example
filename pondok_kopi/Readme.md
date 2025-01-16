@@ -60,25 +60,28 @@ Below is the list of available APIs. Click on each menu to view the detailed doc
 19. [Get Atrian Active](./getAntrianActive.md) \
    Documentation for fetching Active Queue (Poli, Pharmacy, Other) data.
 
-20. [Get MCU Penunjang Medis](./getPenunjangMedisMcu.md)  
-Documentation for fetching Patient's MCU - Medical Services data.
+20. [Get Resume](./getResume.md) \
+   Documentation for fetching Patient's Resume data.
 
-21. [Get Resume](./getResume.md)  
-Documentation for fetching Patient's Resume data.
+21. [Get MCU Penunjang Medis](./getPenunjangMedisMcu.md) \
+   Documentation for fetching Patient's MCU - Medical Services data.
 
-22. [Get Jenis Kamar](./getJenisKamar.md)  
-Documentation for fetching Type of Bed data.
+22. [Get Jenis Kamar](./getJenisKamar.md) \
+   Documentation for fetching Type of Bed data.
 
-23. [Get PDF Penunjang Medis / MCU](./getPdfLab.md)  
-Documentation for fetching Patient's PDF data.
+23. [Get PDF Penunjang Medis / MCU](./getPdfLab.md) \ 
+   Documentation for fetching Patient's PDF data.
+
 
 ## Admedika
-1. [Confirm Reservation ](./admedika/placeAttendance.md)
-Documentation for confirm the reservation on SIMRS.
+1. [Confirm Reservation ](./admedika/placeAttendance.md) \
+   Documentation for confirm the reservation on SIMRS.
 
-2. [Cancel Reservation ](./admedika/faskesCancel.md)
-Documentation for cancel the reservation on SIMRS.
+2. [Cancel Reservation ](./admedika/faskesCancel.md) \
+   Documentation for cancel the reservation on SIMRS.
 
+3. [Push Notification - Resume Medis ](./admedika/pushResumeMedis.md) \
+   Documentation for cancel the reservation on SIMRS.
 
 Documentation for the API to retrieve information about doctor schedule.
 
