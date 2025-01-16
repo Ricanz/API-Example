@@ -91,25 +91,26 @@ The API will return the response in JSON format. Make sure to handle the result 
     "status": "Ok",
     "response": [
         {
-            "jumlah_antrian": "0",
-            "jumlah_antrian_dilayani": null
-        }
-    ]
-}
-```
-
-### Example Response - Farmasi (Success)
-```json
-{
-    "code": 200,
-    "status": "Ok",
-    "response": [
+            "nama_layanan": "Loket Skrining Hidup Sehat Basic",
+            "jumlah_antrian": "5", // total kuota
+            "jumlah_antrian_dilayani": "2", // total antrian
+            "nomor_antrian": "2", // antrian saat ini
+            "nomor_antrian_pasien": "1", // nomor antrian pasien
+            "dsid": "6186",
+            "jam_praktek_awal": "07:00",
+            "jam_praktek_akhir": "14:00",
+            "kode_booking": "24X11MOLU2"
+        },
         {
-            "jumlah_antrian": "0",
-            "jumlah_antrian_dilayani": null,
-            "no_antrian": "0",
-            "no_antrian_aktif_racikan": null,
-            "no_antrian_aktif_nonracikan": null
+            "nama_layanan": "Loket Skrining Hidup Sehat Basic",
+            "jumlah_antrian": "5", // total kuota
+            "jumlah_antrian_dilayani": "2", // total antrian
+            "nomor_antrian": "2", // antrian saat ini
+            "nomor_antrian_pasien": "1", // nomor antrian pasien
+            "dsid": "6186",
+            "jam_praktek_awal": "07:00",
+            "jam_praktek_akhir": "14:00",
+            "kode_booking": "24X11MOLU2"
         }
     ]
 }
