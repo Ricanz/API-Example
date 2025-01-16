@@ -26,10 +26,10 @@ Below is the list of available APIs. Click on each menu to view the detailed doc
 8. [Get Data Patient - Update dan Create Data Pasien](./getDataPasien.md)  
 Documentation for the API to create or update patient data.
 
-9. [Get Perusahaan](./getPerusahaan.md)  
+9. [Get Perusahaan - List Nama Perusahaan](./getPerusahaan.md)  
 Documentation for fetching Perusahaan data.
 
-10. [Get Penjamin](./getPenjamin.md)  
+10. [Get Penjamin - List Nama Penjamin](./getPenjamin.md)  
 Documentation for fetching Penjamin data.
 
 11. [Post Perjanjian](./postPerjanjian.md)  
@@ -56,9 +56,15 @@ Documentation for fetching Type of Bed data.
 18. [Get PDF Penunjang Medis / MCU](./getPdfLab.md)  
 Documentation for fetching Patient's PDF data.
 
-19. [Get Info Jadwal Dokter](./getInfoJadwalDokter.md)  
+19. [Get Info Jadwal Dokter](./getInfoJadwalDokter.md)
+Documentation for fetching doctor's schedule.
 
 20. [Push No RM](./pushNoRm.md)  
+Documentation for push Patient's RM.
+
+21. [Validasi Penjamin Non AdMedika ](./validasiNonAdmedika.md)  
+Documentation for push Patient's RM.
+
 Documentation for the API to retrieve information about doctor schedule.
 
 > **Note:** All the documentation above is organized in separate markdown files based on the endpoint name.

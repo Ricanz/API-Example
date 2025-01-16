@@ -1,14 +1,14 @@
 
-# Get Perusahaan API Documentation
+# Validate Non Admedika API Documentation
 
-This document explains how to make a get perusahaan request to the specified API endpoint using JavaScript's `fetch` API. 
- This API currently use for `Mobile` needed.
+This document explains how to make a post validate non admedika number (post) request to the specified API endpoint using JavaScript's `fetch` API. 
+This API currently use for `Mobile` needed.
 `Make sure the endpoint, request and response is exact same!`
 
 ## Endpoint
 
 **URL**:  
-`https://simrs-api.example.com/api/v1/pass/GetPerusahaan`
+`https://simrs-api.example.com/api/v1/pass/ValidasiNonAdmedika`
 
 **Method**:  
 `POST`
@@ -32,18 +32,22 @@ Send the following form data in the request body:
 
 ```json
 {
-    "data":{
-        "kodeprovider" : "214",
-        "kode_penjamin": "456"
-    }
+  "data": {
+    "kodeprovider": "214",
+    "nomor_identitas": "36740149675481",
+    "kode_penjamin": "456",
+    "kode_perusahaan": "099"
+  }
 }
 ```
 
 ```javascript
 const raw = JSON.stringify({
-    "data":{
-        "kodeprovider" : "214",
-        "kode_penjamin": "456"
+    "data": {
+        "kodeprovider": "214",
+        "nomor_identitas": "36740149675481",
+        "kode_penjamin": "456",
+        "kode_perusahaan": "099"
     }
 });
 ```
@@ -70,7 +74,7 @@ const requestOptions = {
 Use the `fetch` API to send the request:
 
 ```javascript
-fetch("https://simrs-api.example.com/api/v1/pass/GetPerusahaan", requestOptions)
+fetch("https://simrs-api.example.com/api/v1/pass/ValidasiNonAdmedika", requestOptions)
   .then((response) => response.text())
   .then((result) => console.log(result))
   .catch((error) => console.error(error));
@@ -86,21 +90,17 @@ The API will return the response in JSON format. Make sure to handle the result 
 ```json
 {
     "code": 200,
-    "status": "Ok",
-    "response": [
-        {
-            "kode_asuransi": "PLN PURWOSARI",
-            "nama_asuransi": "11645"
-        },
-        {
-            "kode_asuransi": "BANK BRI",
-            "nama_asuransi": "11660"
-        },
-        {
-            "kode_asuransi": "PT. Sarana Usaha sejahtera Insan Palapa (TELKOMEDIKA)",
-            "nama_asuransi": "11661"
-        }
-    ]
+    "status": "success",
+    "message": "Berhasil di validasi"
+}
+```
+
+### Example Response (Error)
+```json
+{
+    "code": 400,
+    "status": "Bad Request",
+    "message": "Data penjamin tidak tervalidasi"
 }
 ```
 
@@ -109,7 +109,7 @@ The API will return the response in JSON format. Make sure to handle the result 
 {
     "code": 404,
     "status": "Not Found",
-    "message": "Data tidak ditemukan"
+    "message": "Data tersebut tidak ada"
 }
 ```
 
@@ -117,5 +117,5 @@ The API will return the response in JSON format. Make sure to handle the result 
 
 ## Notes
 - Ensure you have the correct `Authorization` credentials.
-- Replace the `kode_provider` with the appropriate values for your use case.
+- Replace the `body` with the appropriate values for your use case.
 - Handle sensitive information securely, avoiding hardcoding credentials in production environments.
