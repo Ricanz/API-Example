@@ -3,10 +3,10 @@
 Below is the list of available APIs. Click on each menu to view the detailed documentation.
 
 ## Vendor
-1. [Login](./login.md) 💡 \
+1. [Login](./login.md) \
    Documentation for the login endpoint, including request and response details.
 
-2. [Get NIK - Get Data Pasien](./getNik.md) 💡 \
+2. [Get NIK - Get Data Pasien](./getNik.md) \
    Documentation for the API to retrieve information about patient data by NIK or RM.
 
 3. [Get Data Patient - Update dan Create Data Pasien](./getDataPasien.md) \
@@ -15,7 +15,7 @@ Below is the list of available APIs. Click on each menu to view the detailed doc
 4. [Push No RM](./pushNoRm.md) \
    Documentation for push Patient's RM.
 
-5. [Get Kode Dokter](./getKodeDokter.md) 💡 \
+5. [Get Kode Dokter](./getKodeDokter.md) \
    Documentation for fetching Kode Dokter data.
 
 6. [Get Kode Poli](./getKodePoli.md) \
@@ -69,7 +69,7 @@ Below is the list of available APIs. Click on each menu to view the detailed doc
 22. [Get Jenis Kamar](./getJenisKamar.md) \
    Documentation for fetching Type of Bed data.
 
-23. [Get PDF Penunjang Medis / MCU](./getPdfLab.md) \ 
+23. [Get PDF Penunjang Medis / MCU](./getPdfLab.md) \
    Documentation for fetching Patient's PDF data.
 
 
@@ -83,6 +83,5 @@ Below is the list of available APIs. Click on each menu to view the detailed doc
 3. [Push Notification - Resume Medis ](./admedika/pushResumeMedis.md) \
    Documentation for cancel the reservation on SIMRS.
 
-Documentation for the API to retrieve information about doctor schedule.
 
 > **Note:** All the documentation above is organized in separate markdown files based on the endpoint name.
