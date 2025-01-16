@@ -23,7 +23,7 @@ Below is the list of available APIs. Click on each menu to view the detailed doc
 7. [Get List Dokter](./getListDokter.md)  
    Documentation for fetching List Dokter data.
 
-8. [Get Data Patient](./getDataPasien.md)  
+8. [Get Data Patient - Update dan Create Data Pasien](./getDataPasien.md)  
 Documentation for the API to create or update patient data.
 
 9. [Get Perusahaan](./getPerusahaan.md)  

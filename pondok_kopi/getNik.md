@@ -17,7 +17,7 @@ This document explains how to make a get nik request to the specified API endpoi
 
 ## Headers
 
-Include the `Authorization` header with Basic authentication credentials.
+Include the `Authorization` header with Bearer authentication credentials.
 
 ```javascript
 const myHeaders = new Headers();
