@@ -2,6 +2,7 @@
 
 Below is the list of available APIs. Click on each menu to view the detailed documentation.
 
+## Vendor
 1. [Login](./login.md)  
    Documentation for the login endpoint, including request and response details.
 
@@ -67,6 +68,17 @@ Documentation for checking patient's insurer.
 
 22. [Validasi Penjamin AdMedika ](./validasiAdmedika.md)
 Documentation for checking patient's insurer.
+
+23. [Post Registration ](./postRegistrasi.md)
+Documentation for cofirm reservation.
+
+## Admedika
+1. [Confirm Reservation ](./admedika/placeAttendance.md)
+Documentation for confirm the reservation on SIMRS.
+
+2. [Cancel Reservation ](./admedika/faskesCancel.md)
+Documentation for cancel the reservation on SIMRS.
+
 
 Documentation for the API to retrieve information about doctor schedule.
 
