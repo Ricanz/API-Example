@@ -88,17 +88,20 @@ The API will return the response in JSON format. Make sure to handle the result 
         {
             "nama_dokter": " Agung Prihananto,dr ",
             "kode_dokter": "-717",
-            "poliklinik": "KLINIK UMUM"
+            "poliklinik": "KLINIK UMUM",
+            "jenis_kelamin": "L"
         },
         {
             "nama_dokter": " Christiani Inawati,drg ",
             "kode_dokter": "-719",
-            "poliklinik": "KLINIK UMUM"
+            "poliklinik": "KLINIK UMUM",
+            "jenis_kelamin": "P"
         },
         {
             "nama_dokter": " Dewi Purnamaningsih PS,dr ",
             "kode_dokter": "-720",
-            "poliklinik": "KLINIK UMUM"
+            "poliklinik": "KLINIK UMUM",
+            "jenis_kelamin": "P"
         }
     ]
 }
