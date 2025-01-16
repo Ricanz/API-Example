@@ -58,7 +58,7 @@ Below is the list of available APIs. Click on each menu to view the detailed doc
    Documentation for checking patient's insurer.
 
 19. [Get Atrian Active](./getAntrianActive.md) \
-   Documentation for fetching Active Queue (Poli, Pharmacy, Other) data.
+   Documentation for fetching Active Queue (Poli, Penunjang Medis, Other) data.
 
 20. [Get Resume](./getResume.md) \
    Documentation for fetching Patient's Resume data.
