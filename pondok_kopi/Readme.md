@@ -5,7 +5,7 @@ Below is the list of available APIs. Click on each menu to view the detailed doc
 1. [Login](./login.md)  
    Documentation for the login endpoint, including request and response details.
 
-2. [Get NIK](./getNik.md)  
+2. [Get NIK - Get Data Pasien](./getNik.md)  
    Documentation for the API to retrieve information about patient data by NIK or RM.
 
 3. [Get Info Bed](./getInfoBed.md)  
