@@ -17,11 +17,11 @@ This API will retrieve data for the next 60 days to obtain information about day
 
 ## Headers
 
-Include the `Authorization` header with Basic authentication credentials.
+Include the `Authorization` header with Bearer authentication credentials.
 
 ```javascript
 const myHeaders = new Headers();
-myHeaders.append("Authorization", "Basic XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+myHeaders.append("Authorization", "Bearer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
 ```
 
 ---
@@ -35,7 +35,9 @@ Send the following form data in the request body:
     "data":{
         "kodeprovider" : "214",
         "kode_dokter": "-721",
-        "kode_poli": "347"
+        "kode_poli": "347",
+        "tanggal_hari_ini": "20-01-2025",
+        "jumlah_hari": 4
     }
 }
 ```
@@ -45,7 +47,9 @@ const raw = JSON.stringify({
     "data":{
         "kodeprovider" : "214",
         "kode_dokter": "-721",
-        "kode_poli": "347"
+        "kode_poli": "347",
+        "tanggal_hari_ini": "20-01-2025",
+        "jumlah_hari": 4
     }
 });
 ```
@@ -208,5 +212,7 @@ The API will return the response in JSON format. Make sure to handle the result 
 ## Notes
 - Ensure you have the correct `Authorization` credentials.
 - Replace the `kode_provider` with the appropriate values for your use case.
+- Replace the `tanggal_hari_ini` with the appropriate values for your use case. 
+- Replace the `jumlah_hari` with the appropriate values for your use case. 
 - Fill the `status_praktek` with the doctor status value, example: `Praktek`, `Tidak Praktek`, `Cuti`
 - Handle sensitive information securely, avoiding hardcoding credentials in production environments.
