@@ -35,7 +35,7 @@ Send the following form data in the request body:
   "data": {
     "kodeprovider": "214",
     "jenis_identitas": "1",
-    "nomor_identitas": "36740149675481009824784893",
+    "nomor_identitas": "36740149675481",
     "jenis_pasien": "2",
     "data_diri": {
       "nama_lengkap_pasien": "NAOMA IVANA",
@@ -45,7 +45,8 @@ Send the following form data in the request body:
       "tanggal_lahir": "1987-04-21",
       "tempat_lahir": "SURAKARTA",
       "jenis_kelamin": "M",
-      "golongan_darah": "",
+      "golongan_darah": "O",
+      "hubungan_keluarga": "pribadi", // kakak, adik, ibu, ayah, etc
       "alamat": "PERUM KELAPA GADING RT 3 RW 11",
       "provinsi": "-",
       "kota": "SUKOHARJO",
@@ -62,7 +63,7 @@ const raw = JSON.stringify({
     "data": {
     "kodeprovider": "214",
     "jenis_identitas": "1",
-    "nomor_identitas": "36740149675481009824784893",
+    "nomor_identitas": "36740149675481",
     "jenis_pasien": "2",
     "data_diri": {
       "nama_lengkap_pasien": "NAOMA IVANA",
@@ -72,7 +73,8 @@ const raw = JSON.stringify({
       "tanggal_lahir": "1987-04-21",
       "tempat_lahir": "SURAKARTA",
       "jenis_kelamin": "M",
-      "golongan_darah": "",
+      "golongan_darah": "O",
+      "hubungan_keluarga": "pribadi",// kakak, adik, ibu, ayah, etc
       "alamat": "PERUM KELAPA GADING RT 3 RW 11",
       "provinsi": "-",
       "kota": "SUKOHARJO",
