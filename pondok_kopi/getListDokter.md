@@ -33,7 +33,7 @@ Send the following form data in the request body:
 {
     "data":{
         "kodeprovider" : "214",
-        "tanggal_praktik" : "29-11-2024",
+        "hari" : "Senin",
         "kode_poli": "343",
         "jenis_kelamin": "P" // P = Perempuan, L = Laki-laki
     }
@@ -44,7 +44,7 @@ Send the following form data in the request body:
 const raw = JSON.stringify({
     "data":{
         "kodeprovider" : "214",
-        "tanggal_praktik" : "29-11-2024",
+        "hari" : "Senin",
         "kode_poli": "343",
         "jenis_kelamin": "P" // P = Perempuan, L = Laki-laki
     }
@@ -145,7 +145,7 @@ The API will return the response in JSON format. Make sure to handle the result 
 ## Notes
 - Ensure you have the correct `Authorization` credentials.
 - Replace the `kode_provider` with the appropriate values for your use case.
-- Replace the `tanggal_praktik` with the appropriate values for your use case.
+- Replace the `hari` with the appropriate values for your use case.
 - Replace the `kode_poli` with the appropriate values for your use case.
 - Replace the `jenis_kelamin` with the appropriate values for your use case. `P` for `Perempuan / Female` and `L` for `Laki-laki`
 - Fill the `status_praktek` on the response with the doctor status value, example: `Praktek`, `Tidak Praktek`, `Cuti`

@@ -33,7 +33,6 @@ Send the following form data in the request body:
 {
     "data":{
         "kodeprovider" : "214",
-        "tanggal_hari_ini" : "25-11-2024",
         "kode_dokter": "-721",
         "kode_poli": "347"
     }
@@ -44,7 +43,6 @@ Send the following form data in the request body:
 const raw = JSON.stringify({
     "data":{
         "kodeprovider" : "214",
-        "tanggal_hari_ini" : "25-11-2024",
         "kode_dokter": "-721",
         "kode_poli": "347"
     }
@@ -92,18 +90,43 @@ The API will return the response in JSON format. Make sure to handle the result 
     "status": "Ok",
     "response": [
         {
-            "tanggal_praktek": "25-11-2024",
-            "status_praktek": "Praktek",
-            "dsid": "5863",
-            "waktu_awal": "08:00",
-            "waktu_akhir": "12:30"
+            "hari": "Senin",
+            "jadwal": [
+                {
+                    "status_praktek": "Praktek",
+                    "dsid": "5863",
+                    "waktu_awal": "08:00",
+                    "waktu_akhir": "12:30"
+                },
+                {
+                    "status_praktek": "Praktek",
+                    "dsid": "5864",
+                    "waktu_awal": "14:00",
+                    "waktu_akhir": "16:30"
+                }
+            ]
         },
         {
-            "tanggal_praktek": "25-11-2024",
-            "status_praktek": "Praktek",
-            "dsid": "5864",
-            "waktu_awal": "16:00",
-            "waktu_akhir": "17:00"
+            "hari": "Selasa",
+            "jadwal": [
+                {
+                    "status_praktek": "Praktek",
+                    "dsid": "5863",
+                    "waktu_awal": "08:00",
+                    "waktu_akhir": "12:30"
+                }
+            ]
+        },
+        {
+            "hari": "Rabu",
+            "jadwal": [
+                {
+                    "status_praktek": "Praktek",
+                    "dsid": "5863",
+                    "waktu_awal": "08:00",
+                    "waktu_akhir": "12:30"
+                }
+            ]
         }
     ]
 }
@@ -123,6 +146,5 @@ The API will return the response in JSON format. Make sure to handle the result 
 ## Notes
 - Ensure you have the correct `Authorization` credentials.
 - Replace the `kode_provider` with the appropriate values for your use case.
-- Replace the `tanggal_praktek` with the date you want to get the data.
 - Fill the `status_praktek` with the doctor status value, example: `Praktek`, `Tidak Praktek`, `Cuti`
 - Handle sensitive information securely, avoiding hardcoding credentials in production environments.
