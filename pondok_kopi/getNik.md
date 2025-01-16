@@ -21,7 +21,7 @@ Include the `Authorization` header with Basic authentication credentials.
 
 ```javascript
 const myHeaders = new Headers();
-myHeaders.append("Authorization", "Basic XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+myHeaders.append("Authorization", "Bearer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
 ```
 
 ---
@@ -30,11 +30,12 @@ myHeaders.append("Authorization", "Basic XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
 
 Send the following form data in the request body:
 
+### Get Data Patient by NIK
 ```json
 {
     "data":{
         "kodeprovider" : "214",
-        "jenis_identitas": "2",
+        "jenis_identitas": "1",
         "nik" :"3674014967548100"
     }
 }
@@ -44,8 +45,29 @@ Send the following form data in the request body:
 const raw = JSON.stringify({
   "data":{
         "kodeprovider" : "214",
-        "jenis_identitas": "2",
+        "jenis_identitas": "1",
         "nik" :"3674014967548100"
+    }
+});
+```
+
+### Get Data Patient by RM
+```json
+{
+    "data":{
+        "kodeprovider" : "214",
+        "jenis_identitas": "2",
+        "rm" :"123123"
+    }
+}
+```
+
+```javascript
+const raw = JSON.stringify({
+  "data":{
+        "kodeprovider" : "214",
+        "jenis_identitas": "2",
+        "rm" :"123123"
     }
 });
 ```
@@ -97,7 +119,7 @@ The API will return the response in JSON format. Make sure to handle the result 
         "email": "idabaguscaesar@gmail.com",
         "ttl": "BALI 10-11-1986",
         "jenis_kelamin": "Laki-Laki",
-        "golongan_darah": null,
+        "golongan_darah": "O",
         "alamat": "BONOREJO RT 2/15",
         "provinsi": "-",
         "kota": "SURAKARTA",
