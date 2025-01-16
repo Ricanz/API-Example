@@ -145,4 +145,5 @@ The API will return the response in JSON format. Make sure to handle the result 
 - Replace the `body` with the appropriate values for your use case.
 - Replace the `jenis_identitas` with 1 for get data by nik or 2 for get data by rm
 - Replace the `jenis_pasien` with the appropriate values for your use case. 1 for `new patient` and 2 for `old patient`
+- New patient won't get `no_rm`.
 - Handle sensitive information securely, avoiding hardcoding credentials in production environments.
