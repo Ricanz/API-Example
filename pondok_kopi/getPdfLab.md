@@ -86,7 +86,17 @@ fetch("https://simrs-api.example.com/api/v1/pass/GetPDFLab", requestOptions)
 
 The API will return the response in JSON format. Make sure to handle the result and errors accordingly.
 
-### Example Response (Success)
+### Example Response - URL (Success)
+```json
+{
+    "success": true,
+    "data": {
+        "file_url": "https://getpdf.pdf"
+    }
+}
+```
+
+### Example Response - Base64 (Success)
 ```json
 {
     "success": true,
