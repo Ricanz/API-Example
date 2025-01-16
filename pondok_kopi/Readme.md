@@ -57,6 +57,8 @@ Documentation for fetching Type of Bed data.
 Documentation for fetching Patient's PDF data.
 
 19. [Get Info Jadwal Dokter](./getInfoJadwalDokter.md)  
+
+20. [Push No RM](./pushNoRm.md)  
 Documentation for the API to retrieve information about doctor schedule.
 
 > **Note:** All the documentation above is organized in separate markdown files based on the endpoint name.
